@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="EAA.mainController">
+    <top>
+        <VBox BorderPane.alignment="CENTER">
+            <children>
+                <ToolBar prefHeight="40.0" prefWidth="200.0">
+                    <items>
+                        <Button fx:id="home" mnemonicParsing="false" onAction="#home" text="Home" />
+                        <MenuButton mnemonicParsing="false" text="Users">
+                            <items>
+                                <MenuItem fx:id="addUser" mnemonicParsing="false" onAction="#addUser" text="Add User" />
+                                <MenuItem fx:id="manageUser" mnemonicParsing="false" onAction="#manageUser" text="Manage User" />
+                            </items>
+                        </MenuButton>
+                        <MenuButton layoutX="63.0" layoutY="13.0" mnemonicParsing="false" text="Customer">
+                            <items>
+                                <MenuItem mnemonicParsing="false" text="Add/Manage Type" />
+                                <MenuItem mnemonicParsing="false" text="Add Customer" />
+                                <MenuItem mnemonicParsing="false" text="Manage Customer" />
+                                <MenuItem mnemonicParsing="false" text="Customer Report" />
+                                <MenuItem mnemonicParsing="false" text="Customers by Phone" />
+                            </items>
+                        </MenuButton>
+                        <MenuButton layoutX="226.0" layoutY="13.0" mnemonicParsing="false" text="Sales">
+                            <items>
+                                <MenuItem mnemonicParsing="false" text="Add Leads" />
+                                <MenuItem mnemonicParsing="false" text="Manage Leads" />
+                                <MenuItem mnemonicParsing="false" text="Add Service" />
+                                <MenuItem mnemonicParsing="false" text="Manage Service" />
+                                <MenuItem mnemonicParsing="false" text="Service Report" />
+                            </items>
+                        </MenuButton>
+                        <MenuButton layoutX="329.0" layoutY="13.0" mnemonicParsing="false" text="Tickets">
+                            <items>
+                                <MenuItem mnemonicParsing="false" text="Ticket Laser" />
+                                <MenuItem mnemonicParsing="false" text="Contact Card" />
+                                <MenuItem mnemonicParsing="false" text="Contract Work Done" />
+                                <MenuItem mnemonicParsing="false" text="HMA 1 Year" />
+                                <MenuItem mnemonicParsing="false" text="HMA 3 Year" />
+                            </items>
+                        </MenuButton>
+                        <MenuButton layoutX="432.0" layoutY="13.0" mnemonicParsing="false" text="Reports">
+                            <items>
+                                <MenuItem mnemonicParsing="false" text="HMA Expires" />
+                                <MenuItem mnemonicParsing="false" text="HMA Due" />
+                                <MenuItem mnemonicParsing="false" text="Month Cash" />
+                                <MenuItem mnemonicParsing="false" text="Month XSAC/XHMA" />
+                                <MenuItem mnemonicParsing="false" text="Service Log" />
+                                <MenuItem mnemonicParsing="false" text="PM Log" />
+                                <MenuItem mnemonicParsing="false" text="Unit Log" />
+                                <MenuItem mnemonicParsing="false" text="Customer Service Report" />
+                            </items>
+                        </MenuButton>
+                        <Button fx:id="LogOut" layoutX="10.0" layoutY="13.0" mnemonicParsing="false" onAction="#handleLogOut" text="LogOut" />
+                    </items>
+                </ToolBar>
+            </children>
+        </VBox>
+    </top>
+    <center>
+        <StackPane fx:id="stackPane" BorderPane.alignment="BOTTOM_CENTER"/>
+    </center>
+</BorderPane>

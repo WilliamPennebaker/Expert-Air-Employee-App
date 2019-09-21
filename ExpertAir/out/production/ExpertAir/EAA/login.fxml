@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.stage.Stage?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="250.0" prefWidth="350.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="EAA.loginController">
+   <center>
+      <Pane minHeight="-Infinity" minWidth="-Infinity" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="87.0" layoutY="113.0" text="Login" />
+            <TextField fx:id="username" layoutX="133.0" layoutY="109.0" promptText="Username"/>
+            <Label layoutX="66.0" layoutY="154.0" text="Password" />
+            <PasswordField fx:id="password" layoutX="133.0" layoutY="150.0" promptText="Password" />
+            <Button fx:id="LogIn" layoutX="133.0" layoutY="189.0" mnemonicParsing="false" onAction="#handleLogIn" text="Log In" />
+            <ImageView fx:id="logo" fitHeight="82.0" fitWidth="146.0" layoutX="120.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/logo1.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+   </center>
+</BorderPane>

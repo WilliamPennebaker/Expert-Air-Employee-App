@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<TableView fx:id="tableView" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="200.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="EAA.manageUserCtrl">
+   <columns>
+      <TableColumn fx:id="name" maxWidth="200.0" minWidth="150.0" prefWidth="75.0" text="Name" />
+      <TableColumn fx:id="login" maxWidth="200.0" minWidth="150.0" prefWidth="75.0" text="Login" />
+      <TableColumn fx:id="phone" maxWidth="200.0" minWidth="150.0" prefWidth="75.0" text="Phone" />
+      <TableColumn fx:id="carrier" maxWidth="200.0" minWidth="150.0" prefWidth="75.0" text="Carrier" />
+   </columns>
+</TableView>

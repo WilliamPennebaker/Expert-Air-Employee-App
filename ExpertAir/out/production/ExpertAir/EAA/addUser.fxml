@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="350.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="EAA.addUserCtrl">
+   <children>
+      <TextField fx:id="nameBox" layoutX="76.0" layoutY="54.0" promptText="Name" />
+      <TextField fx:id="phoneNum" layoutX="76.0" layoutY="98.0" promptText="(###)###-####" />
+      <ChoiceBox fx:id="carrier" layoutX="75.0" layoutY="144.0" prefWidth="150.0" value="ATT" />
+      <TextField fx:id="usernameBox" layoutX="76.0" layoutY="191.0" promptText="Username" />
+      <PasswordField fx:id="passwordField" layoutX="76.0" layoutY="235.0" promptText="Password" />
+      <Button fx:id="saveButton" layoutX="90.0" layoutY="279.0" mnemonicParsing="false" onAction="#onSave" text="Save" />
+   </children>
+</Pane>
